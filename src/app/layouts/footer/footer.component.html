@@ -25,6 +25,7 @@
 
   <!-- ######## fixed position html ########## -->
 
-  <div class="upbtn" id="upbtn">
-    <i class="fa-solid fa-arrow-up text-white"></i>
+  <div class="upbtn" *ngIf="isButtonVisible"
+  (click)="scrollToTop()">
+    <fa-icon [icon]="faArrowUp"></fa-icon>
   </div>

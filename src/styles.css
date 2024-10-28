@@ -520,7 +520,7 @@ article .icon{
     height: 50px;
     position: fixed;
     bottom: 25px;
-    display: none;
+    /* display: none; */
     right: 20px;
     background-color: rgb(44, 44, 44);
     border-radius: 50%;
@@ -529,16 +529,20 @@ article .icon{
     border: none;
     transition: all ease-in-out .1s;
 }
-.upbtn i{
+.upbtn fa-icon{
     font-weight: 900;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--color-white);
 }
 .upbtn:hover{
     background-color: var(--color-border-sec);
+}
+.upbtn:hover fa-icon{
+    color: var(--color-dark)
 }
 
 
